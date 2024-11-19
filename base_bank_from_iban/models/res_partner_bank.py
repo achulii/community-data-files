@@ -35,7 +35,7 @@ class ResPartnerBank(models.Model):
         try:
             iban = schwifty.IBAN(acc_number)
             country_code = iban.country_code.lower()
-            country = self.env.ref("base.%s" % country_code, raise_if_not_found=False)
+            country = self.env.ref(f"base.{country_code}", raise_if_not_found=False)
             if iban.bank:
                 vals = {
                     "name": iban.bank["name"],
