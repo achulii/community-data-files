@@ -190,7 +190,7 @@ class ResPartnerIndustryEUNaceWizard(models.TransientModel):
         tree_view_id = self.env.ref("base.res_partner_industry_view_tree").id
         return {
             "name": _("Partner Industries by EU NACE"),
-            "view_mode": "tree",
+            "view_mode": "list",
             "res_model": "res.partner.industry",
             "view_id": tree_view_id,
             "type": "ir.actions.act_window",

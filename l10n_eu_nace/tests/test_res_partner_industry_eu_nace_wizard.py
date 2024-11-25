@@ -2,7 +2,8 @@
 # License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl).
 from unittest.mock import patch
 
-from odoo.tests.common import Form, TransactionCase, new_test_user
+from odoo.tests import Form, new_test_user
+from odoo.tests.common import TransactionCase
 
 from .test_en_nace_request_results import (
     NACE_COMMON,
